@@ -1,0 +1,99 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Game container */
+.hangman-game {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Heading */
+.hangman-game h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* Game status */
+.game-status h2 {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+/* Restart button */
+.restart-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.restart-button:hover {
+  background-color: #2980b9;
+}
+
+/* Keyboard styling */
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0.5rem;
+  margin: 2rem 0;
+  justify-items: center;
+}
+
+.letter-button {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.letter-button:hover {
+  background-color: #ecf0f1;
+}
+
+.letter-button.guessed {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Word display styling */
+.word-display {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+}
+
+.word-display .letter {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 2px solid #2c3e50;
+}
+
+/* Figure part styling */
+.figure-part {
+  stroke: #2c3e50;
+  stroke-width: 4;
+  fill: none;
+}
