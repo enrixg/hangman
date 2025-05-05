@@ -51,17 +51,25 @@ export default function App() {
     <div className="hangman-game">
       <h1>Hangman Game</h1>
       <div className="game-container">
-        <HangmanFigure wrongGuesses={wrongGuesses} />
-        <WordDisplay word={secretWord} guessedLetters={guessedLetters} />
-        <Keyboard 
-          onLetterClick={handleLetterClick} 
-          guessedLetters={guessedLetters} 
-        />
-        <GameStatus 
-          status={gameStatus} 
-          word={secretWord} 
-          onRestart={startNewGame} 
-        />
+        <div className="figure-container">
+          <HangmanFigure wrongGuesses={wrongGuesses} />
+        </div>
+        <div className="word-container">
+          <WordDisplay word={secretWord} guessedLetters={guessedLetters} />
+        </div>
+        <div className="keyboard-container">
+          <Keyboard 
+            onLetterClick={handleLetterClick} 
+            guessedLetters={guessedLetters} 
+          />
+        </div>
+        <div className="status-container">
+          <GameStatus 
+            status={gameStatus} 
+            word={secretWord} 
+            onRestart={startNewGame} 
+          />
+        </div>
       </div>
     </div>
   );

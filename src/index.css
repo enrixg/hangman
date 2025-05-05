@@ -15,6 +15,30 @@ body {
   text-align: center;
 }
 
+/* Game layout containers */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.figure-container {
+  height: 200px;
+  margin: 0 auto;
+}
+
+.word-container {
+  margin: 1rem 0;
+}
+
+.keyboard-container {
+  margin: 1rem 0;
+}
+
+.status-container {
+  margin-top: 1rem;
+}
+
 /* Heading */
 .hangman-game h1 {
   color: #2c3e50;
